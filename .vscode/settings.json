@@ -1,0 +1,7 @@
+{
+  "code-runner.runInTerminal": true,
+  "code-runner.fileDirectoryAsCwd": false,
+  "code-runner.executorMap": {
+    "java": "cd \"$workspaceRoot\"; if (!(Test-Path out)) { New-Item -ItemType Directory -Path out | Out-Null }; $files = Get-ChildItem -Path src -Recurse -Filter *.java | ForEach-Object { $_.FullName }; javac -d out $files; if ($LASTEXITCODE -eq 0) { java -cp out app.Main }"
+  }
+}
