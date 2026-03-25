@@ -41,6 +41,11 @@ javac -d out $files
 java -cp out app.Main
 ```
 
+3. VS Code (Run Code button):
+
+- Open `src/app/Main.java` and click `Run Code`.
+- The workspace is already configured in `.vscode/settings.json` to compile all sources and run `app.Main`.
+
 ## Requirement Mapping
 
 - Requirement 1 -> Singleton
